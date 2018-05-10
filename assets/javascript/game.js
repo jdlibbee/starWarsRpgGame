@@ -52,9 +52,13 @@ $(document).ready(function () {
 
 
     //functions
-    $("img").click(function () {
+    $(".card").click(function (event) {
+        $(this).slideup();
         $(this).clone().append("#hero");
     })
-
+    $("#fight").click(function (event) {
+        $("#hero").fadeIn();
+        $("#enemy").fadeIn();
+    })
 })
 
