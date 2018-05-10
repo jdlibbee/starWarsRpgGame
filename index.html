@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Reset CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <!--Regular CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--Font Family-->
+    <link href="https://fonts.googleapis.com/css?family=Condiment" rel="stylesheet">
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <title>Battle for Boreal Valley!</title>
+</head>
+
+<body>
+    <nav class="nav justify-content-center">
+        <a class="nav-link navbar-brand text-white bg-dark title">Battle for Boreal Valley!</a>
+    </nav>
+    <div class="container">
+        <div class="row m-md-3">
+            <div class="offset-md-2"></div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div id="hero"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="offset-md-2"></div>
+                            <div class="col-md-8">
+                                <button type="button" class="btn btn-danger btn-lg fight" id="fight">FIGHT!</button>
+                            </div>
+                            <div class="offset-md-2"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="jumbotron jumbotron-fluid">
+                                    <div class="container">
+                                        <p class="lead" id="fightStatus"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div id="enemy"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-md-4"></div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <nav class="nav justify-content-center">
+                                    <a class="nav-link navbar-brand text-white bg-danger playerChoice">Choose your Fighters!</a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offset-md-4"></div>
+                </div>
+            </div>
+            <div class="row m-md-2">
+                <div class="card-deck">
+                    <div class="card bg-dark">
+                        <img class="card-img-top" id="aldrich" src="assets/images/Aldrich.jpg" alt="Aldrich">
+                        <div class="card-img-overlay">
+                            <p class="card-text">HP:
+                                <span value="200">200</span>
+                            </p>
+                            <p class="card-text">Atk:
+                                <span value="10">10
+                                    <span</p>
+                                        <p class="card-text">Counter:60</p>
+                        </div>
+                    </div>
+                    <div class="card bg-dark">
+                        <img class="card-img-top" id="oceiros" src="assets/images/oceiros.png" alt="Oceiros">
+                        <div class="card-img-overlay">
+                            <p class="card-text">HP:
+                                <span value="175">175</span>
+                            </p>
+                            <p class="card-text">Atk:
+                                <span value="8">8</span>
+                            </p>
+                            <p class="card-text">Counter:40</p>
+                        </div>
+                    </div>
+                    <div class="card bg-dark">
+                        <img class="card-img-top" id="dancerOfBoreal" src="assets/images/dancerOfBorealValley.jpg" alt="Dancer of Boreal Valley">
+                        <div class="card-img-overlay">
+                            <p class="card-text">HP:
+                                <span value="125">125</span>
+                            </p>
+                            <p class="card-text">Atk:
+                                <span value="6">6</span>
+                            </p>
+                            <p class="card-text">Counter:50</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-md-3">
+                <div class="card-deck">
+                    <div class="card bg-dark">
+                        <img class="card-img-top" id="lorian" src="assets/images/LorianElderPrince.jpg" alt="Lorian Elder Prince">
+                        <div class="card-img-overlay">
+                            <p class="card-text">HP:
+                                <span value="130">130</span>
+                            </p>
+                            <p class="card-text">Atk:
+                                <span value="7">7</span>
+                            </p>
+                            <p class="card-text">Counter:45</p>
+                        </div>
+                    </div>
+                    <div class="card bg-dark">
+                        <img class="card-img-top" id="namelessKing" src="assets/images/namelessKing.jpg" alt="Nameless King">
+                        <div class="card-img-overlay">
+                            <p class="card-text">HP:
+                                <span value="250">250</span>
+                            </p>
+                            <p class="card-text">Atk:
+                                <span value "12">12</span>
+                            </p>
+                            <p class="card-text">Counter:65</p>
+                        </div>
+                    </div>
+                    <div class="card bg-dark">
+                        <img class="card-img-top" id="pontifSlyvahn" src="assets/images/pontifSlyvahn.PNG" alt="Pontif Slyvahn">
+                        <div class="card-img-overlay">
+                            <p class="card-text">HP:
+                                <span value="120">120</span>
+                            </p>
+                            <p class="card-text">Atk:
+                                <span value "5">5</span>
+                            </p>
+                            <p class="card-text">Counter:45</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offset-md-1"></div>
+        </div>
+    </div>
+    <!--Linking to JS Page-->
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>

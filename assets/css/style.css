@@ -1,0 +1,18 @@
+body {
+    background: url(../images/irithyllOfTheBorealValley.jpg);
+    background-repeat: repeat;
+    font-family: 'Condiment', cursive;
+}
+p {
+    font-size: 30px;
+    font-family: 'Condiment', cursive;
+    color: rgb(230, 25, 66);
+    background-color: rgba(20, 20, 20, 0.37);
+    width: 50%;
+}
+.title {
+    font-size: 40px;
+}
+.fight{
+    font-size: 25px;
+}
