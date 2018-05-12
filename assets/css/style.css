@@ -1,18 +1,48 @@
 body {
     background: url(../images/irithyllOfTheBorealValley.jpg);
-    background-repeat: repeat;
+    /* background-attachment: fixed; */
     font-family: 'Condiment', cursive;
 }
 p {
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Condiment', cursive;
     color: rgb(230, 25, 66);
     background-color: rgba(20, 20, 20, 0.37);
-    width: 50%;
+    /* width: 50%; */
+}
+h3{
+    font-size: 40px;
+    font-family: 'Condiment', cursive;
+    color: rgb(230, 25, 66);
+}
+.card {
+    margin: 10px;
+}
+/* #hero{
+    width: 100%;
+    height: 100%;
+}
+#enemy{
+    width: 100%;
+    height: 200%;
+} */
+img{
+    width: 100%;
+    height: 100%;
+}
+#card-text{
+    margin:0 auto;
+    
 }
 .title {
     font-size: 40px;
 }
 .fight{
     font-size: 25px;
+}
+#hero, #enemy{
+    display: inline-block;
+}
+#enemy.img{
+    margin: 0, auto;
 }
