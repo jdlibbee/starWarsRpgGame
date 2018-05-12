@@ -22,7 +22,7 @@ var fighters = [
         health: 200,
         attack: 10,
         counter: 25,
-        img: 'assets/images/Aldrich.jpg'
+        img: 'assets/images/aldrich.jpg'
     },
     {
         name: "oceiros",
@@ -43,7 +43,7 @@ var fighters = [
         health: 130,
         attack: 7,
         counter: 22,
-        img: 'assets/images/LorianElderPrince.jpg'
+        img: 'assets/images/lorianElderPrince.jpg'
     },
     {
         name: "Nameless King",
